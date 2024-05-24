@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    box-sizing: border-box; /* Added to ensure padding and border are included in the element's total width and height */
+}
+
+.heading  {
+    display: flex;
+    align-items: center; /* Added to center the logo vertically */
+    margin: 20px;
+}
+
+.heading img {
+    height: 50px; /* Set the desired height */
+    width: auto;  /* Maintain aspect ratio */
+}
+
+.heading2 {
+    display: flex;
+    justify-content: flex-end; /* Use flex-end instead of right */
+    align-items: center; /* Center items vertically */
+    margin: 20px;
+}
+
+.heading2 button {
+    margin: 10px;
+    padding: 10px 20px; /* Added padding for better appearance */
+    font-size: 16px; /* Adjusted font size */
+    cursor: pointer; /* Added pointer cursor */
+    background-color: white;
+    border: 0px;
+    margin-top: -65px;
+}
+
+.heading2 button:hover {
+    color: blue; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly scale the button on hover */
+}
+
+.heading2 .fas {
+    font-size: 24px; /* Adjust the size of the cart icon */
+    margin-left: 20px; /* Space between the last button and the cart icon */
+    cursor: pointer; /* Added pointer cursor */
+    margin-top: -65px;
+}
+
+.rectangle {
+    position: relative;
+    width: 100%;
+    height: auto; /* Ensure the container's height adjusts to the tallest child */
+}
+
+.rectangle img {
+    position: absolute;
+}
+
+.rectangle img:first-child {
+    width: 100%;
+    height: auto;
+}
+
+.rectangle img:last-child {
+    top: 0; /* Align with the top of the container */
+    left: 30%; /* Move to the center horizontally */
+    transform: translateX(-60%); /* Adjust as needed */
+    width: auto; /* Adjust as needed */
+    height: 408px; /* Match the height of the container */
+}
+
+.rectangle p {
+    position: absolute;
+    margin-top: 160px;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* padding: 10px; */
+    border-radius: 5px;
+    /* text-align: center; */
+    z-index: 100; 
+    width: 80%;
+    max-width: 400px; /* Adjust as needed */
+    font-size: 55px;
+}
+
+.rectangle-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-top: 420px;
+    width: 50%;
+    
+    
+    transform: translate(3%, -50%);
+    margin-left: 350px;
+}
+
+.rectangle-box .rectangle-button,
+.rectangle-box .rectangle-select {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: none;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    
+}
+
+.rectangle-box .rectangle-button:hover {
+    background-color: orange;
+}
+
+.rectangle-box .rectangle-select {
+    width: 200px; /* Adjust as needed */
+}
+
+.photo img{
+    display: block;
+    margin-left: 240px;
+}
+
+.category img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 90px;
+    margin-left: 125px;
+}
+
+.choose img{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-left: 125px;
+}
+
+.client img{
+    margin-top: 90px;
+    margin-left: 40px;
+}
+
+.client2 img{
+    margin-top: 90px;
+    
+    width: 100%;
+}
+
+footer {
+    background-color: none;
+    color: black;
+    padding: 50px;
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-left img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.email-box {
+    margin-bottom: 20px;
+}
+
+.email-box input {
+    width: 200px;
+    padding: 10px;
+}
+
+.email-box button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.social-media {
+    margin-top: 20px;
+   
+    
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-right {
+    float: right;
+}
+
+.shop-section,
+.help-section,
+.company-section {
+   
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+.shop-section h4,
+.help-section h4,
+.company-section h4 {
+    margin-bottom: 35px;
+    
+}
+
+.shop-section ul,
+.help-section ul,
+.company-section ul {
+    list-style: none;
+    padding: 0;
+    
+    
+}
+
+.shop-section ul li,
+.help-section ul li,
+.company-section ul li {
+    margin-bottom: 20px;
+    
+}
+
+.shop-section ul li a,
+.help-section ul li a,
+.company-section ul li a {
+    color: black;
+    text-decoration: none;
+   
+}
+
+.shop-section ul li a:hover,
+.help-section ul li a:hover,
+.company-section ul li a:hover {
+    text-decoration: underline;
+}
